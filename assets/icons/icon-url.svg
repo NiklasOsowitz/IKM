@@ -1,0 +1,7 @@
+<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+    <g transform="translate(2 2)">
+        <path class="icon-stroke" d="M7.09,4.28l2.11-2.11c1.55-1.55,4.07-1.55,5.63,0s1.55,4.07,0,5.63l-2.11,2.11"/>
+        <path class="icon-stroke" d="M4.28,7.09l-2.11,2.11c-1.55,1.55-1.55,4.07,0,5.63,1.55,1.55,4.07,1.55,5.63,0l2.11-2.11"/>
+        <line class="icon-stroke" x1="6.42" y1="10.58" x2="10.58" y2="6.42"/>
+    </g>
+</svg>

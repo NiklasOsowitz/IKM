@@ -1,0 +1,72 @@
+title: Franchisee
+description: 
+  en: Can edit the content of the assigned page.
+  de: Kann Inhalt der zugewiesene Seite bearbeiten.
+
+# permissions
+permissions:
+  access:
+    panel: true
+    site: true
+    settings: false
+    languages: false
+    system: false
+    account: false
+    users: false
+  files:
+    create: true
+    changeName: true
+    changeTemplate: true
+    delete: true
+    read: true
+    replace: true
+    update: true
+  languages:
+    create: false
+    delete: false
+  pages:
+    access: true
+    changeSlug: false
+    changeStatus: false
+    changeTemplate: false
+    changeTitle: false
+    create: false
+    delete: false
+    list: false
+    move: false
+    duplicate: false
+    preview: true
+    read: true
+    sort: false
+    update: true
+  site:
+    changeTitle: false
+    update: false
+  user:
+    changeEmail: false
+    changeLanguage: false
+    changeName: false
+    changePassword: false
+    changeRole: false
+    delete: false
+    update: true
+  users:
+    changeEmail: false
+    changeLanguage: false
+    changeName: false
+    changePassword: false
+    changeRole: false
+    create: false
+    delete: false
+    update: false
+
+# fields
+fields:
+  assignedPage:
+    label:
+      en: Your IKM-Site
+      de: Deine IKM-Seite
+    type: pages
+    multiple: false
+    options: query
+    query: site.pages

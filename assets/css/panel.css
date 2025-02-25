@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --menu-color-back: var(--color-gray-200);
+    --color-border: var(--color-gray-200);
+    --theme-color-back: var(--color-gray-100);
+    --box-color-back: var(--color-gray-100);
+    --dialog-color-back: var(--color-gray-100);
+    --layout-border-color: var(--color-gray-200);
+    --header-color-back: var(--color-white);
+    --overlay-color-back: unset;
+    --font-sans: "Figtree";
+    --font-mono: "Figtree";
+
+    --color-text-dimmed: var(--color-gray-500);
+
+    --outline: 2px solid var(--color-focus, currentColor);
+    --color-focus: #9BC1E1;
+    --spacing-c1: 0.5rem;
+    --spacing-c2: 1rem;
+}
+
+html {
+    background: var(--theme-color-back);
+}
+
+.k-panel-menu {
+    border-right: none;
+    box-shadow: none;
+    background-color: var(--menu-color-back);
+}
+
+.k-panel-menu-button[aria-current] {
+    --button-color-back: unset;
+    box-shadow: unset;
+}
+
+.k-panel-menu-toggle .k-button-icon {
+    border-block: unset;
+    border-inline-end: unset;
+    background: var(--menu-color-back);
+}
+
+.k-header {
+    padding: 1rem 1rem 0rem 1rem;
+    background: var(--header-color-back);
+    border-bottom: none;
+    box-shadow: none;
+}
+
+.k-input {
+    outline: none;
+    box-shadow: none;
+}
+
+.k-overlay[open]>.k-portal, .k-drawer[open]>.k-portal {
+    background: var(--overlay-color-back);
+    backdrop-filter: blur(5px);
+}
+
+.k-overlay[open][data-type=drawer]>.k-portal {
+    --overlay-color-back: unset;
+}
+
+.k-drawer-header {
+    background: transparent;
+}
+
+.k-drawer-body {
+    background: var(--theme-color-back);
+}
+
+.k-tabs {
+    padding: 0rem 1rem 1rem 1rem;
+    background: var(--header-color-back);
+    margin-inline: unset;
+    gap: var(--spacing-c2);
+}
+
+.k-tab-button[aria-current]:after {
+    width: 100%;
+    inset-inline: unset;
+    background: var(--color-black);
+}
+
+.k-button:where([data-variant=dimmed]) {
+    --button-color-icon: var(--color-gray-600);
+    --button-color-text: var(--color-gray-600);
+}
+
+.k-button[data-variant=filled] {
+    --button-color-back: var(--color-gray-200);
+}
+
+.k-button:where([data-variant=dimmed]):not([aria-disabled]):is(:hover,[aria-current]) .k-button-text {
+    filter: unset;
+    color: var(--color-black);
+}
+
+.k-button:where([data-variant=dimmed]):not([aria-disabled]):is(:hover,[aria-current]) .k-button-icon {
+    --button-color-icon: var(--color-black);
+}
+
+.k-button-group[data-layout=collapsed]>.k-button[data-variant=filled]:not(:first-child) {
+    border-left: unset;
+}
+
+.k-tabs-tab .k-button {
+    padding: 0;
+}
+
+.k-field-header {
+    margin-bottom: var(--spacing-c1);
+}
+
+.k-layout {
+    border: unset;
+    box-shadow: none;
+    background: transparent;
+}
+
+.k-layout:not(:last-of-type) {
+    margin-bottom: var(--spacing-c1);
+}
+
+.k-layout-toolbar {
+    background: unset;
+    border-inline-start: unset;
+    color: var(--color-gray-500);
+}
+
+.k-layout-toolbar:hover {
+    color: initial;
+}
+
+.k-layout-column {
+    border: 1px dashed var(--layout-border-color);
+    background: transparent;
+}
+
+.k-layout-columns.k-grid {
+    grid-gap: 0.75rem;
+    background: transparent;
+}
+
+.k-layout-column > .k-blocks {
+    background: none;
+}
+
+.k-layout-field footer {
+    display: none;
+}
+
+.k-layout-field footer .k-button[data-variant=filled] {
+    --button-color-back: transparent;
+}
+
+.k-layout-field .k-field-header .k-field-label {
+    display: none;
+}
+
+.k-block-container {
+    border-radius: unset;
+}
+
+.k-block-container.k-block-container-type-grid {
+    margin-bottom: var(--spacing-c2);
+    background: var(--color-white);
+}
+
+.k-block-container:not(:last-of-type) {
+    border-bottom: 1px solid var(--layout-border-color);
+}
+
+.k-block-container-fieldset-grid .k-block-options {
+    top: 0.5rem;
+    bottom: unset;
+    inset-inline-end: 0.75rem;
+    margin-top: unset;
+}
+
+.k-layout-column .k-block-options {
+    top: unset;
+    bottom: 0.75rem;
+    inset-inline-end: 0.75rem;
+    margin-top: unset;
+}
+
+.k-box {
+    background: var(--theme-color-back);
+}
+
+.k-box[data-theme=empty] {
+    background: unset;
+}
+
+.k-box[data-theme=passive] {
+    background: var(--color-gray-200);
+    box-shadow: var(--shadow);
+}
+
+.k-blocks:not([data-empty=true],[data-disabled=true]) {
+    background: none;
+    box-shadow: unset;
+}
+
+.k-select-input-native option {
+    padding: 0.25rem;
+    padding-block-start: unset;
+    padding-block-end: unset;
+    min-block-size: unset;
+    padding-inline: unset;
+}

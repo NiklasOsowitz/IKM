@@ -1,0 +1,472 @@
+title: Site
+
+# options
+options:
+  changeTitle: false
+  update: true
+
+# fields
+tabs:
+
+  # pages
+  pages:
+    label:
+      en: Pages
+      de: Seiten
+    icon: menu
+    columns:
+      colA: 
+        width: 1/1
+        sections:
+          pagesA:
+            type: fields
+            fields:
+              pageshelp:
+                label:
+                type: info
+                icon: smile
+                theme: passive
+                text: |
+                  Veröffentlichte (grün) Seiten sind einsehbar. Ungelistete (blau) Seiten sind nur über die direkte URL einsehbar. Unveröffentlichte (rot) Seiten sind nicht nur über dieses Panel einsehbar.
+              pagesLineA:
+                type: line
+      colB:
+        width: 1/1
+        sections:
+          pagesB:
+            type: pages
+            label:
+              en: Pages
+              de: Seiten
+            empty:
+              en: No sites
+              de: Kein Inhalt
+            layout: list
+            image: false
+            sortable: false
+            templates:
+              - default
+              - defaultsubs
+              - defaultsubsfranch
+              - franchisee
+            templatesIgnore:
+              - error
+              - franchisee
+              - guide
+              - media
+              - styles
+      colC: 
+        width: 1/1
+        sections:
+          pagesC:
+            type: fields
+            fields:
+              pagesLineB:
+                type: line
+
+  # navigation
+  navigation:
+    label: 
+      en: Navigation
+      de: Navigation
+    icon: sort
+    columns:
+      # menu
+      colA: 
+        width: 1/1
+        sections:
+          navigationA:
+            type: fields
+            fields:
+              headerhead:
+                label: 
+                  en: Header
+                  de: Header
+                type: headline
+              headerhelp:
+                label:
+                type: info
+                icon: smile
+                theme: passive
+                text: |
+                  Das Menu besteht aus der Infozeile, dem Navigations-Menu, dem Sub-Menu und der Kontaktleiste. Hier kannst du das Menu bearbeiten, Position und Reihenfolge und Inhalt der Menus verändern. 
+                  Beachte: Das Ändern der Menus hat keine Auswirkung auf den Status der Seiten.
+              menuLineA:
+                type: line
+      colB:
+        width: 1/1
+        sections:
+          navigationB:
+            type: fields
+            fields:
+              menuinfotoggle:
+                label:
+                  en: Info status
+                  de: Infostatus
+                icon: preview
+                type: toggle
+                width: 1/4
+                text:
+                  - 
+                    en: Off
+                    de: Ausgeschaltet
+                  - 
+                    en: On
+                    de: Wird angezeigt
+              menuinfocontent:
+                label:
+                  en: Info content 
+                  de: Info Inhalt
+                type: writer
+                width: 3/4
+                buttons: false
+                nodes: false
+                marks:
+                  - bold
+                  - italic
+                  - underline
+                  - link
+                  - '|'
+                  - clear
+              menuLineB:
+                type: line
+      colC:
+        width: 1/1
+        sections:
+          navigationC:
+            type: fields
+            fields:
+              navmenu:
+                label: 
+                  en: Header-Menu
+                  de: Header-Menu
+                type: structure
+                fields:
+                  mainpages:
+                    extends: fields/nav-menufields
+                  submenutoggle:
+                    label: 
+                      en: Sub-Menu
+                      de: Sub-Menu
+                    type: toggle
+                    text: 
+                      - Deaktiviert
+                      - Aktiviert
+                  subpages:
+                    type: structure
+                    label: 
+                      en: Sub-Menu pages
+                      de: Sub-Menu Seiten
+                    when:
+                      submenutoggle: true
+                    fields:
+                      menufields:
+                        extends: fields/nav-menufields
+              menuLineC:
+                type: line
+      colD:
+        width: 1/1
+        sections:
+          navigationD:
+            type: fields
+            fields:
+              submenu:
+                label:
+                  en: Header-Submenu
+                  de: Header-Submenu
+                type: structure
+                fields:
+                  mainpages:
+                    extends: fields/nav-menufields
+                  submenutoggle:
+                    label: Sub-Menu
+                    type: toggle
+                    text: 
+                      - 
+                        en: Off
+                        de: Deaktiviert
+                      - 
+                        en: On
+                        de: Aktiviert
+                  subpages:
+                    type: structure
+                    label: 
+                      en: Sub-Menu pages
+                      de: Sub-Menu Seiten
+                    when:
+                      submenutoggle: true
+                    fields:
+                      menufields:
+                        extends: fields/nav-menufields
+              menuLineD:
+                type: line
+      # footer
+      colF: 
+        width: 1/1
+        sections:
+          navigationF:
+            type: fields
+            fields:
+              footerhead:
+                label: 
+                  en: Footer
+                  de: Footer
+                type: headline
+              footerhelp:
+                label:
+                type: info
+                icon: smile
+                theme: passive
+                text: |
+                  Der Footer besteht aus dem Footer-Inhalt (Layoutelement) und dem darunterliegenden dem Footer-Menu sowie der Kontaktleiste (Editierbar unter "Menu").
+              footerLineA:
+                type: line
+      colG:
+        width: 1/1
+        sections:
+          navigationG:
+            type: fields
+            fields:
+              contentsFooter:
+                label:
+                  en: Footer Content
+                  de: Footer-Inhalt
+                type: blocks
+                fieldsets:
+                  - grid
+              footerLineB:
+                type: line
+      colH:
+        width: 1/1
+        sections:
+          navigationH:
+            type: fields
+            fields:
+              footermenu:
+                label: 
+                  en: Footer-Menu
+                  de: Footer-Menu
+                type: structure
+                fields:
+                  mainpages:
+                    extends: fields/nav-menufields
+                  submenutoggle:
+                    label: Sub-Menu
+                    type: toggle
+                    text:
+                      - 
+                        en: Off
+                        de: Deaktiviert
+                      - 
+                        en:
+                        de: Aktiviert
+                  subpages:
+                    type: structure
+                    label:
+                      en: Sub-Menu pages
+                      de: Sub-Menu Seiten
+                    when:
+                      submenutoggle: true
+                    fields:
+                      menufields:
+                        extends: fields/nav-menufields
+
+  # banner
+  banner:
+    label: 
+      en: Banner
+      de: Banner
+    icon: bookmark
+    columns:
+      colA: 
+        width: 1/1
+        sections:
+          bannerA:
+            type: fields
+            fields:
+              bannerhelp:
+                label:
+                type: info
+                icon: smile
+                theme: passive
+                text: |
+                  Das Banner ist unterhalb des Menübands der Seite fixiert und dient dazu wichtige Informationen oder Neuigkeiten temporär öffentlich anzuzeigen. Es wird auf jeder Seite angezeigt.
+              bannerLineA:
+                type: line
+      colB:
+        width: 1/1
+        sections:
+          bannerB:
+            type: fields
+            fields:
+              bannertoggle:
+                label: 
+                  en: Banner status
+                  de: Bannerstatus
+                icon: bookmark
+                width: 1/4
+                extends: fields/show
+              bannerclass:
+                width: 1/4
+                extends: fields/class
+              bannerid:
+                width: 1/4
+                extends: fields/id
+              bannerbackgroundimg:
+                label:
+                  en: Banner Background-Image
+                  de: Banner Hintergrundbild
+                width: 1/4
+                type: files
+                query: site.find('media').images
+                multiple: false
+                uploads:
+                  accept: template in ["images", "assets"]
+                  parent: site.find('media')
+                extends: fields/mediabackgroundimg
+      colC:
+        width: 1/1
+        sections:
+          bannerC:
+            type: fields
+            fields:
+              bannercontent:
+                label:
+                  en: Banner Content
+                  de: Banner Inhalt
+                type: layout
+                selector:
+                  size: huge
+                  columns: 3
+                extends:
+                  - layout/layoutsM
+                  - layout/fieldsetsS
+                  - layout/settingsM
+
+  # information
+  information:
+    label: 
+      en: Information
+      de: Information
+    icon: flag
+    columns:
+      colA: 
+        width: 1/1
+        sections:
+          informationA:
+            type: fields
+            fields:
+              informationhelp:
+                label:
+                icon: smile
+                type: info
+                theme: passive
+                text: |
+                  Dieser Bereich dient dazu generele Informationen über die ganze Website hinweg zu bearbeiten. Weitere Anpassungen kannst du im Reiter "Metadata & SEO" vornehmen.
+              informationLineA:
+                type: line
+      colB: 
+        width: 1/1
+        sections:
+          informationB:
+            type: fields
+            fields:
+              name:
+                label: 
+                  en: Name
+                  de: Name
+                icon: user
+                type: text
+                width: 1/4
+              subline:
+                label: 
+                  en: Subline
+                  de: Subline
+                icon: headline
+                type: text
+                width: 1/4
+              gapA:
+                type: gap
+                width: 2/4
+              adress:
+                label: 
+                  en: Adress
+                  de: Adresse
+                icon: pin
+                type: writer
+                buttons: false
+                width: 2/4
+                nodes: false
+                inline: true
+                marks:
+                  - bold
+                  - italic
+                  - underline
+                  - link
+                  - '|'
+                  - clear
+              gapB:
+                type: gap
+                width: 2/4
+              email:
+                label: 
+                  en: Email
+                  de: Email
+                type: link
+                width: 1/4
+                options:
+                  - email
+              phone:
+                label: 
+                  en: Phone
+                  de: Telefon
+                type: link
+                width: 1/4
+                options:
+                  - tel
+              informationLineB:
+                type: line
+      colC: 
+        width: 1/1
+        sections:
+          informationD:
+            type: fields
+            fields:
+              copyright:
+                label: 
+                  en: Copyright
+                  de: Copyright
+                icon: tag
+                type: writer
+                buttons: false
+                width: 2/4
+                nodes: false
+                marks:
+                  - bold
+                  - italic
+                  - underline
+                  - link
+                  - '|'
+                  - clear
+              creatortag:
+                label: 
+                  en: Creatortag
+                  de: Creatortag
+                icon: tag
+                type: writer
+                buttons: false
+                width: 2/4
+                nodes: false
+                marks:
+                  - bold
+                  - italic
+                  - underline
+                  - link
+                  - '|'
+                  - clear
+                disabled: true
+              informationLineC:
+                type: line
+
+  #SEO
+  seo: seo/site

@@ -1,0 +1,199 @@
+Title: IKM
+
+----
+
+Menuinfotoggle: true
+
+----
+
+Menuinfocontent: <p><strong>Servicezeit:</strong> Mo - Fr 9.00 - 12.30 Uhr</p>
+
+----
+
+Navmenu:
+
+- 
+  itemtitle: Hallo
+  itemlink: page://5G59ly9L8EUZfSmE
+  submenutoggle: 'false'
+  subpages: [ ]
+- 
+  itemtitle: Entdecke das Konzept
+  itemlink: page://JkSsO6SKmJk3upUz
+  submenutoggle: 'false'
+  subpages: [ ]
+- 
+  itemtitle: Finde dein Angebot
+  itemlink: page://VMBTrwpXvBAN5b3k
+  submenutoggle: 'false'
+  subpages: [ ]
+
+----
+
+Submenu:
+
+- 
+  itemtitle: Impressum
+  itemlink: page://hrL2xCJpN1l730xC
+  submenutoggle: 'false'
+  subpages: [ ]
+- 
+  itemtitle: Datenschutz
+  itemlink: page://WEsZgEgtLT9XH6qW
+  submenutoggle: 'false'
+  subpages: [ ]
+
+----
+
+Contentsfooter: [{"content":{"scname":"","scshow":"true","scheight":"","scframe":"frame-pano","scgridtemp":"","scgridgap":"","sctheme":"","sclocalimg":[],"scmediaimg":[],"scimglocation":"local","scspacer":"","scpadding":"pdn-d","scattributes":"","scclass":"","scid":"","grid":"[{\"attrs\":{\"areadisplay\":\"\",\"areagridgap\":\"\",\"areagridalign\":\"\",\"areagridjustify\":\"\",\"areaflexdirection\":\"\",\"areaflexgap\":\"\",\"areaflexalign\":\"\",\"areaflexjustify\":\"\",\"areatextcolor\":\"\",\"areabackgroundcolor\":\"\",\"arearadius\":\"\",\"arealocalimg\":[],\"areamediaimg\":[],\"areaimglocation\":\"local\",\"areaspacer\":\"\",\"areapadding\":\"\",\"gridspan\":\"\",\"areaattributes\":\"\",\"areaclass\":\"\",\"areaid\":\"\"},\"columns\":[{\"blocks\":[{\"content\":{\"level\":\"h2\",\"text\":\"Footer Content\",\"elmtextstyle\":\"p-1\",\"elmtextcolor\":\"\",\"elmbackgroundcolor\":\"\",\"elmradius\":\"\",\"elmspacer\":\"\",\"elmpadding\":\"\",\"elmattributes\":\"\",\"elmclass\":\"\",\"elmid\":\"\"},\"id\":\"5ab6a580-a6fb-4ffd-8c5f-1ebb0304442b\",\"isHidden\":false,\"type\":\"heading\"}],\"id\":\"1050455e-c5c7-4ab8-a1aa-f520a121295d\",\"width\":\"1/1\"}],\"id\":\"e91a7097-95a2-48df-8c3d-6db0150ed142\"}]"},"id":"0b8ed2cf-386a-4a17-b8da-8e4034933ee1","isHidden":false,"type":"grid"}]
+
+----
+
+Footermenu:
+
+- 
+  itemtitle: Startseite
+  itemlink: page://5G59ly9L8EUZfSmE
+  submenutoggle: 'false'
+  subpages: [ ]
+- 
+  itemtitle: Entdecke das Konzept
+  itemlink: page://JkSsO6SKmJk3upUz
+  submenutoggle: 'false'
+  subpages: [ ]
+- 
+  itemtitle: Finde das Angebot
+  itemlink: page://VMBTrwpXvBAN5b3k
+  submenutoggle: 'false'
+  subpages: [ ]
+- 
+  itemtitle: Kontakt
+  itemlink: page://WiuJNpIcRqBxJTu7
+  submenutoggle: 'false'
+  subpages: [ ]
+- 
+  itemtitle: Franchisee
+  itemlink: ""
+  submenutoggle: 'true'
+  subpages:
+    - 
+      itemtitle: Werde Partner
+      itemlink: page://sH3hsnySzvxM5FDD
+    - 
+      itemtitle: Kontakt
+      itemlink: page://WiuJNpIcRqBxJTu7
+- 
+  itemtitle: Rechtliches
+  itemlink: ""
+  submenutoggle: 'true'
+  subpages:
+    - 
+      itemtitle: Impressum
+      itemlink: page://hrL2xCJpN1l730xC
+    - 
+      itemtitle: Datenschutz
+      itemlink: page://WEsZgEgtLT9XH6qW
+
+----
+
+Bannertoggle: true
+
+----
+
+Bannerclass: 
+
+----
+
+Bannerid: 
+
+----
+
+Bannerbackgroundimg: 
+
+----
+
+Bannercontent: [{"attrs":{"areadisplay":"","areagridgap":"","areagridalign":"","areagridjustify":"","areaflexdirection":"","areaflexgap":"","areaflexalign":"","areaflexjustify":"","areatextcolor":"","areabackgroundcolor":"","arearadius":"","arealocalimg":[],"areamediaimg":[],"areaimglocation":"","areaspacer":"","areapadding":"","gridspan":"","areaattributes":"","areaclass":"","areaid":""},"columns":[{"blocks":[{"content":{"level":"h2","text":"Banner Content","elmtextstyle":"p-1","elmtextcolor":"","elmbackgroundcolor":"","elmradius":"","elmspacer":"","elmpadding":"","elmattributes":"","elmclass":"","elmid":""},"id":"66680e5a-4fa9-4e32-96a7-89499576c7d2","isHidden":false,"type":"heading"}],"id":"41ff1335-c643-40c2-9bb5-32e769092005","width":"1/1"}],"id":"b993c0fc-d0bf-46d5-a43d-5e480326a0e5"}]
+
+----
+
+Name: IKM
+
+----
+
+Subline: Integrative Kunst- und Musikpädagogik
+
+----
+
+Adress: Eicker Weg 29<br>49565 Bramsche
+
+----
+
+Email: mailto:ikm@ikm-musik.de
+
+----
+
+Phone: tel:05468938330
+
+----
+
+Copyright: <p>© 2024 IKM Integrative Kunst- und Musikpädagogik</p>
+
+----
+
+Creatortag: <p>Code &amp; Design by <a href="https://niklas.osowitz.de/" target="_blank">Niklas Osowitz</a></p>
+
+----
+
+Metatemplate: IKM / {{ title }}
+
+----
+
+Metadescription: 
+
+----
+
+Ogtemplate: 
+
+----
+
+Ogdescription: 
+
+----
+
+Ogsitename: 
+
+----
+
+Ogimage: 
+
+----
+
+Twittercardtype: summary
+
+----
+
+Robotsindex: true
+
+----
+
+Robotsfollow: true
+
+----
+
+Robotsarchive: true
+
+----
+
+Robotsimageindex: true
+
+----
+
+Robotssnippet: true
+
+----
+
+Socialmediaaccounts: 
+
+----
+
+Contentsbanner: 

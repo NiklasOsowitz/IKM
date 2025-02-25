@@ -1,0 +1,7 @@
+label: Background-Image (Media)
+type: files
+query: site.find('media').images
+multiple: false
+uploads:
+  accept: template in ["images", "assets"]
+  parent: site.find('media')

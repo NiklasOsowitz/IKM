@@ -1,0 +1,44 @@
+title: 
+  en: Video
+  de: Video
+
+# options
+options:
+  changeName: true
+  changeTemplate: true
+  delete: true
+  read: true
+  replace: true
+  update: true
+
+# settings
+image:
+  back: pattern
+accept:
+  extension: mp4
+focus: false
+
+# fields
+fields:
+  alt:
+    label:
+      en: Alt
+      de: Alt-Text
+    type: text
+    icon: wheelchair
+    width: 1/2
+  copyrightimg:
+    label: 
+      en: Author / Copyright
+      de: Autor / Copyright
+    icon: info
+    default: © IKM
+    required: true
+    type: writer
+    width: 1/2
+    help: "Bildrechte bitte immer angeben: © Autor/Plattform, Link falls vorhanden"
+    nodes: false
+    marks:
+      - link
+      - '|'
+      - clear

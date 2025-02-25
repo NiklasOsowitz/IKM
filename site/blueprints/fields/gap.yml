@@ -1,0 +1,9 @@
+label: Gap
+icon: cog
+placeholder: none
+type: select
+width: 1/2
+options:
+  gap-a: Gap A
+  gap-b: Gap B
+  gap-c: Gap C

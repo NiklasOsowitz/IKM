@@ -1,0 +1,93 @@
+Title: Styles
+
+----
+
+Brandmarkfull: 
+
+----
+
+Brandmarkicon: 
+
+----
+
+Coloritems:
+
+- 
+  colorname: c-weiss
+  colorvalue: '#ffffff'
+  color: '#ffffff'
+- 
+  colorname: c-grau-a
+  colorvalue: '#f5f5fa'
+- 
+  colorname: c-grau-b
+  colorvalue: '#ebebf0'
+  color: '#f3f4f6'
+- 
+  colorname: c-grau-c
+  colorvalue: '#d6d6dc'
+- 
+  colorname: c-grau-d
+  colorvalue: '#b9b9be'
+- 
+  colorname: c-grau-e
+  colorvalue: '#a0a0a5'
+- 
+  colorname: c-grau-f
+  colorvalue: '#77777d'
+- 
+  colorname: c-grau-g
+  colorvalue: '#494949'
+- 
+  colorname: c-grau-h
+  colorvalue: '#2f2f2f'
+- 
+  colorname: c-schwarz
+  colorvalue: '#1f1f1f'
+  color: '#000000'
+- 
+  colorname: c-blau-a
+  colorvalue: '#1c91d4'
+- 
+  colorname: c-blau-b
+  colorvalue: '#9bc1e1'
+- 
+  colorname: c-gruen-a
+  colorvalue: '#00bab0'
+- 
+  colorname: c-gruen-b
+  colorvalue: '#4affd2'
+- 
+  colorname: c-orange-a
+  colorvalue: '#fb6a02'
+- 
+  colorname: c-gelb-a
+  colorvalue: '#ffff7d'
+- 
+  colorname: c-lila-a
+  colorvalue: '#645da2'
+- 
+  colorname: c-lila-b
+  colorvalue: '#a29af1'
+- 
+  colorname: c-pink-a
+  colorvalue: '#f875c4'
+- 
+  colorname: c-pink-b
+  colorvalue: '#ffbfd0'
+- 
+  colorname: c-beige-a
+  colorvalue: '#f5f1ee'
+- 
+  colorname: c-beige-b
+  colorvalue: '#e8e2db'
+- 
+  colorname: c-beige-c
+  colorvalue: '#cac2ba'
+- 
+  colorname: c-beige-d
+  colorvalue: '#818181'
+
+----
+
+Uuid: kDNm0yHMsHWulWPm

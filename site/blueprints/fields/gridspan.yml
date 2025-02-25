@@ -1,0 +1,11 @@
+label: Grid-Span
+icon: expand
+placeholder: none
+type: select
+width: 1/2
+options:
+  span-a: Span 2
+  span-b: Span 3
+  span-c: Span 4
+  span-d: Span 5
+  span-e: Span 6

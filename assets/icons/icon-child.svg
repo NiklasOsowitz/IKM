@@ -1,0 +1,9 @@
+<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+    <g transform="translate(2 2)">
+        <circle class="icon-stroke" cx="8" cy="8" r="7"/>
+        <path class="icon-stroke" d="M9.35,10.77c-.35.17-.83.27-1.35.27s-1-.1-1.35-.27"/>
+        <circle class="icon-fill" cx="5.69" cy="7.04" r="1.1"/>
+        <circle class="icon-fill" cx="10.31" cy="7.04" r="1.1"/>
+        <path class="icon-stroke" d="M8,1c-1.93,0-1.93,2.82.01,2.82"/>
+    </g>
+</svg>

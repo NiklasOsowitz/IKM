@@ -1,0 +1,12 @@
+label: Padding (Innenabstand)
+icon: text-middle
+type: select
+width: 1/2
+placeholder: none
+options:
+  pdn-a: Padding A
+  pdn-b: Padding B
+  pdn-c: Padding C
+  pdn-d: Padding D
+  pdn-e: Padding E
+  pdn-f: Padding F

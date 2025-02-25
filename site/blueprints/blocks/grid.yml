@@ -1,0 +1,85 @@
+name: Section
+label: Section
+icon: dashboard
+fields:
+  scname:
+    label: Section-Name
+    icon: code
+    width: 1/2
+    type: text
+  scshow:
+    width: 1/2
+    extends: fields/show
+  lineA:
+    type: line
+  scheight:
+    label: Section-Height
+    icon: expand
+    placeholder: Inhaltsbasiert
+    type: select
+    width: 1/2
+    options:
+      height-a: 100%
+      height-b: 50%
+  scframe:
+    width: 1/2
+    extends: fields/frame
+  scgridtemp:
+    label: Section-Grid-Template
+    width: 1/2
+    extends: fields/gridtemp
+  scgridgap:
+    label: Section-Grid-Gap
+    width: 1/2
+    extends: fields/gap
+  lineB:
+    type: line
+  sctheme:
+    width: 1/2
+    extends: fields/theme
+  lineC:
+    type: line
+  sclocalimg:
+    width: 1/2
+    extends: fields/localbackgroundimg
+    when:
+      scimglocation: local
+  scmediaimg:
+    width: 1/2
+    extends: fields/mediabackgroundimg
+    when:
+      scimglocation: media
+  scimglocation:
+    width: 1/2
+    extends: fields/imglocation
+  lineD:
+    type: line
+  scspacer:
+    width: 1/2
+    extends: fields/spacer
+  scpadding:
+    width: 1/2
+    extends: fields/padding
+  lineE:
+    type: line
+  scattributes:
+    width: 1/1
+    extends: fields/attributes
+  scclass:
+    width: 1/1
+    extends: fields/class
+  scid:
+    width: 1/1
+    extends: fields/id
+  grid:
+    label: Inhalt
+    type: layout
+    selector:
+      size: huge
+      columns: 3
+    extends:
+      - layout/layoutsM
+      - layout/fieldsetsM
+      - layout/settingsM
+    when:
+      - false

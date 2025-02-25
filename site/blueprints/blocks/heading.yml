@@ -1,0 +1,80 @@
+name: field.blocks.heading.name
+icon: title
+wysiwyg: true
+preview: heading
+tabs:
+  settings:
+    label: Inhalt
+    fields:
+      level:
+        label: field.blocks.heading.level
+        type: toggles
+        empty: false
+        default: "h2"
+        labels: false
+        options:
+          - value: h1
+            icon: h1
+            text: H1
+          - value: h2
+            icon: h2
+            text: H2
+          - value: h3
+            icon: h3
+            text: H3
+          - value: h4
+            icon: h4
+            text: H4
+          - value: h5
+            icon: h5
+            text: H5
+          - value: h6
+            icon: h6
+            text: H6
+      text:
+        label: field.blocks.heading.text
+        placeholder: field.blocks.heading.placeholder
+        type: writer
+        inline: true
+        marks:
+          - bold
+          - italic
+          - underline
+          - link
+          - '|'
+          - clear
+  styles:
+    label: Style
+    fields:
+      elmtextstyle:
+        width: 1/1
+        extends: fields/textstyle
+      elmtextcolor:
+        width: 1/2
+        extends: fields/textcolor
+      elmbackgroundcolor:
+        width: 1/2
+        extends: fields/backgroundcolor
+      elmradius:
+        width: 1/2
+        extends: fields/radius
+      stylesLineA:
+        type: line
+      elmspacer:
+        width: 1/2
+        extends: fields/spacer
+      elmpadding:
+        width: 1/2
+        extends: fields/padding
+  expert:
+    label: Expert
+    fields:
+      elmattributes:
+        width: 1/1
+        extends: fields/attributes
+      elmclass:
+        width: 1/1
+        extends: fields/class
+      elmid:
+        width: 1/1
+        extends: fields/id

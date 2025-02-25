@@ -1,0 +1,558 @@
+:root {
+    --fontsize-a: 4em;
+    --fontsize-b: 3em;
+    --fontsize-c: 2.2em;
+    --fontsize-d: 1.6em;
+    --fontsize-e: 1.25em;
+    --fontsize-f: 1em;
+    --fontsize-g: 0.9em;
+    --fontsize-h: 0.75em;
+    --fontweight-300: 300;
+    --fontweight-400: 400;
+    --fontweight-500: 500;
+    --fontweight-600: 600;
+    --fontweight-700: 700;
+    --fontweight-800: 800;
+    --fontweight-900: 900;
+}
+
+/* format */
+
+.frmt-11 {
+    aspect-ratio: 1 / 1;
+}
+
+.frmt-43 {
+    aspect-ratio: 4 / 3;
+}
+
+.frmt-34 {
+    aspect-ratio: 3 / 4;
+}
+
+.frmt-54 {
+    aspect-ratio: 5 / 4;
+}
+
+.frmt-45 {
+    aspect-ratio: 4 / 5;
+}
+
+.frmt-169 {
+    aspect-ratio: 16 / 9;
+}
+
+.frmt-916 {
+    aspect-ratio: 9 / 16;
+}
+
+/* image */
+
+.imgfig {
+    overflow: hidden;
+}
+
+/* list */
+
+.lst-a, .lst-b, .lst-c {
+    list-style-position: inside;
+}
+
+::marker {
+    margin-left: unset !important;
+    margin-right: 0.1rem !important;
+}
+
+.lst-a {
+    list-style-type: decimal;
+}
+
+.lst-b {
+    list-style-type: disc;
+}
+
+.lst-c {
+    list-style: none;  
+}
+
+/* line */
+
+hr {
+    margin: unset;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+hr.spcr-a {
+    margin-top: var(--la);
+}
+
+hr.spcr-b {
+    margin-top: var(--lb);
+}
+
+hr.spcr-c {
+    margin-top: var(--lc);
+}
+
+hr.spcr-d {
+    margin-top: var(--ld);
+}
+
+hr.spcr-e {
+    margin-top: var(--le);
+}
+
+hr.spcr-f {
+    margin-top: var(--lf);
+}
+
+.line-1 {
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+}
+
+.line-2 {
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+}
+
+.br-c-01 {
+    border-color: var(--c-weiss);
+}
+
+.br-c-02 {
+    border-color: var(--c-grau-a);
+}
+
+.br-c-03 {
+    border-color: var(--c-grau-b);
+}
+
+.br-c-04 {
+    border-color: var(--c-grau-c);
+}
+
+.br-c-05 {
+    border-color: var(--c-grau-d);
+}
+
+.br-c-06 {
+    border-color: var(--c-grau-e);
+}
+
+.br-c-07 {
+    border-color: var(--c-grau-f);
+}
+
+.br-c-08 {
+    border-color: var(--c-grau-g);
+}
+
+.br-c-09 {
+    border-color: var(--c-grau-h);
+}
+
+.br-c-10 {
+    border-color: var(--c-schwarz);
+}
+
+.br-c-11 {
+    border-color: var(--c-blau-a);
+}
+
+.br-c-12 {
+    border-color: var(--c-blau-b);
+}
+
+.br-c-13 {
+    border-color: var(--c-gruen-a);
+}
+
+.br-c-14 {
+    border-color: var(--c-gruen-b);
+}
+
+.br-c-15 {
+    border-color: var(--c-orange-a);
+}
+
+.br-c-16 {
+    border-color: var(--c-gelb-a);
+}
+
+.br-c-17 {
+    border-color: var(--c-lila-a);
+}
+
+.br-c-18 {
+    border-color: var(--c-lila-b);
+}
+
+.br-c-19 {
+    border-color: var(--c-pink-a);
+}
+
+.br-c-20 {
+    border-color: var(--c-pink-b);
+}
+
+.br-c-21 {
+    border-color: var(--c-beige-a);
+}
+
+.br-c-22 {
+    border-color: var(--c-beige-b);
+}
+
+.br-c-23 {
+    border-color: var(--c-beige-c);
+}
+
+.br-c-24 {
+    border-color: var(--c-beige-d);
+}
+
+/* paragraph */
+
+strong {
+    font-weight: var(--fontweight-600);
+}
+
+em {
+    font-family: var(--font-b);
+    font-style: unset;
+}
+
+u {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p > a {
+    text-decoration: none;
+    color: var(--c-blau-a);
+    font-weight: 500;
+}
+
+.h-1 {
+    font-size: var(--fontsize-a);
+    font-weight: var(--fontweight-700);
+    line-height: 1.5;
+}
+
+.h-2 {
+    font-size: var(--fontsize-b);
+    font-weight: var(--fontweight-700);
+    line-height: 1.5;
+}
+
+.h-3 {
+    font-size: var(--fontsize-c);
+    font-weight: var(--fontweight-600);
+    line-height: 1.5;
+}
+
+.h-4 {
+    font-size: var(--fontsize-d);
+    font-weight: var(--fontweight-600);
+    line-height: 1.5;
+}
+
+.h-5 {
+    font-size: var(--fontsize-e);
+    font-weight: var(--fontweight-600);
+    line-height: 1.5;
+}
+
+.h-6 {
+    font-size: var(--fontsize-f);
+    font-weight: var(--fontweight-400);
+    line-height: 1.5;
+}
+
+.p-1 {
+    font-size: var(--fontsize-f);
+    font-weight: var(--fontweight-400);
+    line-height: 1.5;
+}
+
+.p-2 {
+    font-size: var(--fontsize-g);
+    font-weight: var(--fontweight-400);
+    line-height: 1.5;
+}
+
+.p-3 {
+    font-size: var(--fontsize-g);
+    font-weight: var(--fontweight-400);
+    line-height: 1.5;
+}
+
+/* button */
+
+.btn-a, .btn-b, .btn-c {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.25rem 0.5rem;
+    cursor: pointer;
+}
+
+.btn-a {
+    flex-direction: row-reverse;
+}
+
+.btn-c {
+    flex-direction: column-reverse;
+    aspect-ratio: 1/1;
+}
+
+.btn-a {
+    font-size: var(--fontsize-e);
+    font-weight: var(--fontweight-500);
+    color: var(--c-grau-e);
+}
+
+.btn-b {
+    font-size: var(--fontsize-e);
+    font-weight: var(--fontweight-500);
+    color: var(--c-grau-e);
+}
+
+.btn-c {
+    font-size: var(--fontsize-e);
+    font-weight: var(--fontweight-500);
+    color: var(--c-grau-e);
+}
+
+.btn-icon {
+    position: relative;
+    aspect-ratio: 1/1;
+    stroke: var(--c-grau-e);
+}
+
+.btn-icon > .icon {
+    overflow: visible;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.icon-fill {
+    stroke: none;
+}
+
+.icon-stroke {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-width: 0.2em;
+}
+
+.btn-s-a .icon-stroke {
+    stroke-width: 0.15em;
+}
+
+.btn-s-a .btn-icon {
+    width: 1rem;
+}
+
+.btn-s-b .icon-stroke {
+    stroke-width: 0.175em;
+}
+
+.btn-s-b .btn-icon {
+    width: 1.25rem;
+}
+
+.btn-s-c .icon-stroke {
+    stroke-width: 0.1em;
+}
+
+.btn-s-c .btn-icon {
+    width: 3rem;
+}
+
+/* icon theme */
+
+.th-a > .btn-icon .icon-stroke {
+    stroke: var(--c-grau-e);
+}
+
+.th-a > .btn-icon .icon-fill {
+    fill: var(--c-grau-e);
+}
+
+.th-b > .btn-icon .icon-stroke {
+    stroke: var(--c-grau-e);
+}
+
+.th-b > .btn-icon .icon-fill {
+    fill: var(--c-grau-e);
+}
+
+.th-c > .btn-icon .icon-stroke {
+    stroke: var(--c-blau-a);
+}
+
+.th-c > .btn-icon .icon-fill {
+    fill: var(--c-blau-a);
+}
+
+.th-d > .btn-icon .icon-stroke {
+    stroke: var(--c-lila-a);
+}
+
+.th-d > .btn-icon .icon-fill {
+    fill: var(--c-lila-a);
+}
+
+.th-e > .btn-icon .icon-stroke {
+    stroke: var(--c-gruen-b);
+}
+
+.th-e > .btn-icon .icon-fill {
+    fill: var(--c-gruen-b);
+}
+
+.th-f > .btn-icon .icon-stroke {
+    stroke: var(--c-gelb-a);
+}
+
+.th-f > .btn-icon .icon-fill {
+    fill: var(--c-gelb-a);
+}
+
+.th-g > .btn-icon .icon-stroke {
+    stroke: var(--c-weiss);
+}
+
+.th-g > .btn-icon .icon-fill {
+    fill: var(--c-weiss);
+}
+
+.th-h > .btn-icon .icon-stroke {
+    stroke: var(--c-lila-a);
+}
+
+.th-h > .btn-icon .icon-fill {
+    fill: var(--c-lila-a);
+}
+
+.th-i > .btn-icon .icon-stroke {
+    stroke: var(--c-beige-d);
+}
+
+.th-i > .btn-icon .icon-fill {
+    fill: var(--c-beige-d);
+}
+
+.th-j > .btn-icon .icon-stroke {
+    stroke: var(--c-beige-d);
+}
+
+.th-j > .btn-icon .icon-fill {
+    fill: var(--c-beige-d);
+}
+
+.th-k > .btn-icon .icon-stroke {
+    stroke: var(--c-grau-b);
+}
+
+.th-l > .btn-icon .icon-fill {
+    fill: var(--c-grau-b);
+}
+
+/* button spacer */
+
+.btn-a.spcr-a.spcr-a, .btn-b.spcr-a.spcr-a, .btn-c.spcr-a.spcr-a {
+    margin-right: var(--la);
+}
+
+.btn-a.spcr-b.spcr-b, .btn-b.spcr-b.spcr-b, .btn-c.spcr-b.spcr-b {
+    margin-right: var(--lb);
+}
+
+.btn-a.spcr-c.spcr-c, .btn-b.spcr-c.spcr-c, .btn-c.spcr-c.spcr-c {
+    margin-right: var(--lc);
+}
+
+.btn-a.spcr-d.spcr-d, .btn-b.spcr-d.spcr-d, .btn-c.spcr-d.spcr-d {
+    margin-right: var(--ld);
+}
+
+.btn-a.spcr-e.spcr-e, .btn-b.spcr-e.spcr-e, .btn-c.spcr-e.spcr-e {
+    margin-right: var(--le);
+}
+
+.btn-a.spcr-f.spcr-f, .btn-b.spcr-f.spcr-f, .btn-c.spcr-f.spcr-f {
+    margin-right: var(--lc);
+}
+
+/* button padding */
+
+.btn-a.pdn-a, .btn-b.pdn-a {
+    padding: var(--la) var(--lc);
+}
+
+.btn-c.pdn-a {
+    padding: var(--la);
+}
+
+.btn-a.pdn-b, .btn-b.pdn-b {
+    padding: var(--lb) var(--lc);
+}
+
+.btn-c.pdn-b {
+    padding: var(--lb);
+}
+
+.btn-a.pdn-c, .btn-b.pdn-c {
+    padding: var(--lc) var(--ld);
+}
+
+.btn-c.pdn-c {
+    padding: var(--lc);
+}
+
+.btn-a.pdn-d, .btn-b.pdn-d {
+    padding: var(--le) var(--ld);
+}
+
+.btn-c.pdn-d {
+    padding: var(--ld);
+}
+
+.btn-a.pdn-e, .btn-b.pdn-e {
+    padding: var(--le);
+}
+
+.btn-c.pdn-e {
+    padding: var(--le);
+}
+
+.btn-a.pdn-f, .btn-b.pdn-f {
+    padding: var(--lf) var(--lf);
+}
+
+.btn-c.pdn-f {
+    padding: var(--lf);
+}
+
+/* classes */
+
+.bc-ill-a {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-y: 3rem;
+}

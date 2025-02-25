@@ -1,0 +1,54 @@
+title: Media
+
+# options
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTitle: false
+  delete: false
+  duplicate: false
+  move: false
+  preview: false
+  update: true
+status:
+  draft: false
+  unlisted: true
+  listed: false
+
+# fields
+columns:
+  colA:
+    width: 1/1
+    sections:
+      scA:
+        type: fields
+        fields:
+          styleshelpA:
+            label: 
+            type: info
+            icon: smile
+            theme: passive
+            text:
+              en: |
+                The media folder serves as a global data storage for assets, images and videos that are intended for more than one page.
+              de: |
+                Der Media-Ordner dient als globale Datenablage für Assets, Bilder und Videos, die für mehr als eine Seite bestimmt sind.
+          stylesLineA:
+            type: line
+  colB:
+    width: 1/1
+    sections:
+      sitemedia:
+        label:
+          en: Files (global) 
+          de: Dateien (Seite)
+        empty:
+          en: No files
+          de: Kein Inhalt
+        type: files
+        layout: cards
+        size: medium
+        info: "Template: {{ file.template }} <br /> {{ file.dimensions.width }} x {{ file.dimensions.height }} px <br /> {{ file.niceSize }}"
+        search: true
+        limit: 60
+        sortable: true

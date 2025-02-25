@@ -1,0 +1,18 @@
+label: Theme
+icon: palette
+placeholder: standard
+type: select
+width: 1/6
+options:
+  th-a: Theme Leicht-Grau (A)
+  th-b: Theme Grau (B)
+  th-c: Theme Spielzeug (C)
+  th-d: Theme Sonne (D)
+  th-e: Theme Blume (E)
+  th-f: Theme Decke (F)
+  th-g: Theme Orange (G)
+  th-h: Theme Rosa (H)
+  th-i: Theme Sandkasten (I)
+  th-j: Theme Ton (J)
+  th-k: Theme Dunkel-Grau (K)
+  th-l: Theme Dunkel (L)

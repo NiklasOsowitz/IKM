@@ -1,0 +1,14 @@
+type: group
+fields:
+  itemtitle:
+    type: text
+    label: Name
+  itemlink:
+    label: Link
+    type: link
+    options:
+      - page
+      - url
+      - anchor
+      - file
+      - custom      

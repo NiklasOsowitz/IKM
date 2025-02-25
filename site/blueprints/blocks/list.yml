@@ -1,0 +1,69 @@
+name: field.blocks.list.name
+icon: list-bullet
+wysiwyg: true
+preview: list
+tabs:
+  settings:
+    label: Inhalt
+    fields:
+      listtype:
+        label: List-Type
+        type: toggles
+        empty: false
+        default: "lst-a"
+        labels: true
+        options:
+          - value: lst-a
+            icon: list-numbers
+            text: Numbers
+          - value: lst-b
+            icon: list-bullet
+            text: Bullets
+          - value: lst-c
+            icon: menu
+            text: Icon
+      text:
+        label: Inhalt
+        type: list
+        marks:
+          - bold
+          - italic
+          - underline
+          - link
+          - '|'
+          - clear
+  styles:
+    label: Style
+    fields:
+      elmtextstyle:
+        width: 1/1
+        extends: fields/textstyle
+      elmtextcolor:
+        width: 1/2
+        extends: fields/textcolor
+      elmbackgroundcolor:
+        width: 1/2
+        extends: fields/backgroundcolor
+      elmradius:
+        width: 1/2
+        extends: fields/radius
+      stylesLineA:
+        type: line
+      elmspacer:
+        width: 1/2
+        extends: fields/spacer
+      elmpadding:
+        width: 1/2
+        extends: fields/padding
+  expert:
+    label: Expert
+    fields:
+      elmattributes:
+        width: 1/1
+        extends: fields/attributes
+      elmclass:
+        width: 1/1
+        extends: fields/class
+      elmid:
+        width: 1/1
+        extends: fields/id

@@ -1,0 +1,49 @@
+title: Guide
+
+# options
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTitle: false
+  delete: false
+  duplicate: false
+  move: false
+  preview: true
+  update: true
+status:
+  draft: false
+  unlisted: true
+  listed: false
+
+# fields
+tabs:
+  content:
+    label: Content
+    icon: layers
+    columns:
+      colA:
+        width: 1/1
+        sections:
+         scA:
+          type: fields
+          fields:
+            styleshelpA:
+              label: 
+              type: info
+              icon: smile
+              theme: passive
+              text: |
+                Hier findest du Einstellungs- und Komponentenbeispiele für dieses Seite. Du kannst hier auch Layouts, Komponenten und Elemente kopieren und in anderen Seiten einfügen.
+            stylesLineA:
+              type: line
+      colB: 
+        width: 1/1
+        sections:
+          scB:
+            type: fields
+            fields:
+              contents:
+                label: Inhalt
+                type: blocks
+                fieldsets:
+                  - grid

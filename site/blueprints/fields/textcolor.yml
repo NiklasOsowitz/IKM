@@ -1,0 +1,30 @@
+label: Text-Color
+icon: palette
+placeholder: standard
+type: select
+width: 1/2
+options:
+  tc-c-01: c-weiss
+  tc-c-02: c-grau-a
+  tc-c-03: c-grau-b
+  tc-c-04: c-grau-c
+  tc-c-05: c-grau-d
+  tc-c-06: c-grau-e
+  tc-c-07: c-grau-f
+  tc-c-08: c-grau-g
+  tc-c-09: c-grau-h
+  tc-c-10: c-schwarz
+  tc-c-11: c-blau-a
+  tc-c-12: c-blau-b
+  tc-c-13: c-gruen-a
+  tc-c-14: c-gruen-b
+  tc-c-15: c-orange-a
+  tc-c-16: c-gelb-a
+  tc-c-17: c-lila-a
+  tc-c-18: c-lila-b
+  tc-c-19: c-pink-a
+  tc-c-20: c-pink-b
+  tc-c-21: c-beige-a
+  tc-c-22: c-beige-b
+  tc-c-23: c-beige-c
+  tc-c-24: c-beige-d

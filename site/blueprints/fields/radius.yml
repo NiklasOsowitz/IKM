@@ -1,0 +1,10 @@
+label: Radius
+icon: circle
+type: select
+width: 1/2
+placeholder: none
+options:
+  rd-a: Radius A
+  rd-b: Radius B
+  rd-c: Radius C
+  rd-d: Radius D

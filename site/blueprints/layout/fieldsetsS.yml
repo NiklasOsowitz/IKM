@@ -1,0 +1,19 @@
+fieldsets:
+  text:
+    label: Paragraph
+    type: group
+    fieldsets:
+      - heading
+      - text
+      - line
+  tools:
+    label: Tools
+    type: group
+    fieldsets:
+      - button
+  media:
+    label: Media
+    type: group
+    fieldsets:
+      - image
+      - video

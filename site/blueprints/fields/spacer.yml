@@ -1,0 +1,12 @@
+label: Spacer (Außenabstand)
+icon: text-bottom
+placeholder: none
+type: select
+width: 1/2
+options:
+  spcr-a: Spacer A
+  spcr-b: Spacer B
+  spcr-c: Spacer C
+  spcr-d: Spacer D
+  spcr-e: Spacer E
+  spcr-f: Spacer F

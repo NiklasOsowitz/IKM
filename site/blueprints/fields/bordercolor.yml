@@ -1,0 +1,30 @@
+label: Background-Color
+icon: palette
+placeholder: standard
+type: select
+width: 1/2
+options:
+  br-c-01: c-weiss
+  br-c-02: c-grau-a
+  br-c-03: c-grau-b
+  br-c-04: c-grau-c
+  br-c-05: c-grau-d
+  br-c-06: c-grau-e
+  br-c-07: c-grau-f
+  br-c-08: c-grau-g
+  br-c-09: c-grau-h
+  br-c-10: c-schwarz
+  br-c-11: c-blau-a
+  br-c-12: c-blau-b
+  br-c-13: c-gruen-a
+  br-c-14: c-gruen-b
+  br-c-15: c-orange-a
+  br-c-16: c-gelb-a
+  br-c-17: c-lila-a
+  br-c-18: c-lila-b
+  br-c-19: c-pink-a
+  br-c-20: c-pink-b
+  br-c-21: c-beige-a
+  br-c-22: c-beige-b
+  br-c-23: c-beige-c
+  br-c-24: c-beige-d

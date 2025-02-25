@@ -1,0 +1,118 @@
+:root {
+    --maxframe: 1920px;
+    --gutter-s: 1rem;
+    --gutter-w: 1rem;
+    --gutter-p: 1rem;
+}
+
+/* sections */
+
+section {
+    display: flex;
+    background-position: center;
+    background-size: cover;
+}
+
+section.pdn-a.pdn-a {
+    padding-top: var(--la);
+    padding-right: unset;
+    padding-bottom: var(--la);
+    padding-left: unset;
+}
+
+section.pdn-b.pdn-b {
+    padding-top: var(--lb);
+    padding-right: unset;
+    padding-bottom: var(--lb);
+    padding-left: unset;
+}
+
+section.pdn-c.pdn-c {
+    padding-top: var(--lc);
+    padding-right: unset;
+    padding-bottom: var(--lc);
+    padding-left: unset;
+}
+
+section.pdn-d.pdn-d {
+    padding-top: var(--ld);
+    padding-right: unset;
+    padding-bottom: var(--ld);
+    padding-left: unset;
+}
+
+section.pdn-e.pdn-e {
+    padding-top: var(--le);
+    padding-right: unset;
+    padding-bottom: var(--le);
+    padding-left: unset;
+}
+
+section.pdn-f.pdn-f {
+    padding-top: var(--lf);
+    padding-right: unset;
+    padding-bottom: var(--lf);
+    padding-left: unset;
+}
+
+/* height */
+
+.height-a {
+    min-height: 100vh;
+}
+
+.height-b {
+    min-height: 50vh;
+}
+
+/* frame */
+
+.frame-pano, .frame-wide, .frame-standard, .frame-ui {
+    margin: 0 auto;
+    max-width: var(--maxframe);
+}
+
+.frame-pano, .frame-wide, .frame-standard {
+    display: grid;
+    align-self: center;
+    width: 100%;
+}
+
+.frame-pano {
+    padding-left: var(--gutter-p);
+    padding-right: var(--gutter-p);
+}
+
+.frame-wide {
+    padding-left: var(--gutter-w);
+    padding-right: var(--gutter-w);
+}
+
+.frame-standard {
+    padding-left: var(--gutter-s);
+    padding-right: var(--gutter-s);
+}
+
+.frame-ui {
+    padding-left: var(--gutter-p);
+    padding-right: var(--gutter-p);
+}
+
+nav > .frame-ui {
+    padding-left: unset;
+    padding-right: unset;
+}
+
+@media only screen and (min-width: 768px) {
+
+    :root {
+        --gutter-s: 8rem;
+        --gutter-w: 6rem;
+        --gutter-p: 4rem;
+    }
+
+    nav > .frame-ui {
+        padding-left: var(--gutter-p);
+        padding-right: var(--gutter-p);
+    }
+}

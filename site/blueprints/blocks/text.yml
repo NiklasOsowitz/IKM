@@ -1,0 +1,51 @@
+name: field.blocks.text.name
+icon: text
+wysiwyg: true
+preview: text
+tabs:
+  settings:
+    label: Inhalt
+    fields:
+      text:
+        type: writer
+        placeholder: Inhalt
+        nodes: false
+        marks:
+          - bold
+          - italic
+          - underline
+          - link
+          - '|'
+          - clear
+  styles:
+    label: Style
+    fields:
+      elmtextstyle:
+        width: 1/1
+        extends: fields/textstyle
+      elmtextcolor:
+        width: 1/2
+        extends: fields/textcolor
+      elmbackgroundcolor:
+        width: 1/2
+        extends: fields/backgroundcolor
+      elmradius:
+        width: 1/2
+        extends: fields/radius
+      stylesLineA:
+        type: line
+      elmspacer:
+        width: 1/2
+        extends: fields/spacer
+      elmpadding:
+        width: 1/2
+        extends: fields/padding
+  expert:
+    label: Expert
+    fields:
+      elmattributes:
+        width: 1/1
+        extends: fields/attributes
+      elmclass:
+        width: 1/1
+        extends: fields/class

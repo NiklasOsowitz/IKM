@@ -1,0 +1,29 @@
+/* nav-banner */
+
+.banner {
+    position: fixed;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 997;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.banner-content {
+    padding: 1rem 2rem;
+    opacity: 1;
+    border-radius: 0.25rem;
+    background-color: var(--c-grau-a);
+    background-position: center;
+    background-size: cover;
+    transform: translateY(0rem);
+}
+
+@media only screen and (min-width: 768px) {
+
+    .banner {
+        top: 8rem;
+        bottom: unset;
+    }
+}

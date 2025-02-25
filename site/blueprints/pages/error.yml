@@ -1,0 +1,34 @@
+title: Styles
+
+# options
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTitle: false
+  delete: false
+  duplicate: false
+  move: false
+  preview: true
+  update: true
+status:
+  draft: false
+  unlisted: true
+  listed: false
+
+# fields
+tabs:
+  content:
+    label: Content
+    icon: layers
+    columns:
+      colA: 
+        width: 1/1
+        sections:
+          scA:
+            type: fields
+            fields:
+              contents:
+                label: Inhalt
+                type: blocks
+                fieldsets:
+                  - grid

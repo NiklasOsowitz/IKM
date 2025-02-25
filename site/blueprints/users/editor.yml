@@ -1,0 +1,72 @@
+title: Editor
+description: 
+  en: Can edit content of all pages.
+  de: Kann Inhalt jeder Seite bearbeiten.
+
+# permissions
+permissions:
+  access:
+    panel: true
+    site: true
+    settings: false
+    languages: false
+    system: false
+    account: false
+    users: true
+  files:
+    create: true
+    changeName: true
+    changeTemplate: true
+    delete: true
+    read: true
+    replace: true
+    update: true
+  languages:
+    create: false
+    delete: false
+  pages:
+    access: true
+    changeSlug: true
+    changeStatus: true
+    changeTemplate: true
+    changeTitle: true
+    create: true
+    delete: true
+    list: true
+    move: true
+    duplicate: true
+    preview: true
+    read: true
+    sort: true
+    update: true
+  site:
+    changeTitle: false
+    update: false
+  user:
+    changeEmail: true
+    changeLanguage: true
+    changeName: true
+    changePassword: true
+    changeRole: true
+    delete: true
+    update: true
+  users:
+    changeEmail: true
+    changeLanguage: true
+    changeName: true
+    changePassword: true
+    changeRole: false
+    create: true
+    delete: true
+    update: true
+
+# fields
+fields:
+  assignedPage:
+    label:
+      en: Your IKM-Site
+      de: Deine IKM-Seite
+    type: pages
+    multiple: true
+    options: query
+    query: site.pages

@@ -1,0 +1,152 @@
+settings:
+  tabs:
+    styles:
+      fields:
+        areadisplay:
+          label: Display
+          icon: cog
+          placeholder: block
+          type: select
+          width: 1/1
+          options:
+            grid: Grid
+            flex: Flexbox
+        stylesGapA:
+          type: gap
+          width: 1/2
+          when:
+            areadisplay: grid
+        areagridgap:
+          label: Grid-Gap
+          width: 1/2
+          extends: fields/gap
+          when:
+            areadisplay: grid
+        areagridalign:
+          label: Align
+          icon: cog
+          placeholder: none
+          type: select
+          width: 1/2
+          when:
+            areadisplay: grid
+          options:
+            astart: Start
+            acenter: Center
+            aend: End
+            astretch: Stretch
+            abaseline: Baseline
+        areagridjustify:
+          label: Justify
+          icon: cog
+          placeholder: none
+          type: select
+          width: 1/2
+          when:
+            areadisplay: grid
+          options:
+            jstart: Start
+            jcenter: Center
+            jend: End
+            jspacea: Space-Around
+            jspaceb: Space-Between
+            jspacee: Space-Evently
+        areaflexdirection:
+          label: Flex-Direction
+          icon: cog
+          placeholder: none
+          type: select
+          width: 1/2
+          when:
+            areadisplay: flex
+          options:
+            flexrow: Row
+            flexcol: Column
+        areaflexgap:
+          label: Flex-Gap
+          width: 1/2
+          extends: fields/gap
+          when:
+            areadisplay: flex
+        areaflexalign:
+          label: Align
+          icon: cog
+          placeholder: none
+          type: select
+          width: 1/2
+          when:
+            areadisplay: flex
+          options:
+            astart: Start
+            acenter: Center
+            aend: End
+            astretch: Stretch
+            abaseline: Baseline
+        areaflexjustify:
+          label: Justify
+          icon: cog
+          placeholder: none
+          type: select
+          width: 1/2
+          when:
+            areadisplay: flex
+          options:
+            jstart: Start
+            jcenter: Center
+            jend: End
+            jspacea: Space-Around
+            jspaceb: Space-Between
+            jspacee: Space-Evently
+        stylesLineA:
+          type: line
+        areatextcolor:
+          width: 1/2
+          extends: fields/textcolor
+        areabackgroundcolor:
+          width: 1/2
+          extends: fields/backgroundcolor
+        arearadius:
+          width: 1/2
+          extends: fields/radius
+        stylesLineB:
+          type: line
+        arealocalimg:
+          width: 1/2
+          extends: fields/localbackgroundimg
+          when:
+            areaimglocation: local
+        areamediaimg:
+          width: 1/2
+          extends: fields/mediabackgroundimg
+          when:
+            areaimglocation: media
+        areaimglocation:
+          width: 1/2
+          extends: fields/imglocation
+        stylesLineC:
+          type: line
+        areaspacer:
+          width: 1/2
+          extends: fields/spacer
+        areapadding:
+          width: 1/2
+          extends: fields/padding
+        stylesLineD:
+          type: line
+        stylesGapA:
+          type: gap
+          width: 1/2
+        gridspan:
+          width: 1/2
+          extends: fields/gridspan
+    expert:
+      fields:
+        areaattributes:
+          width: 1/1
+          extends: fields/attributes
+        areaclass:
+          width: 1/1
+          extends: fields/class
+        areaid:
+          width: 1/1
+          extends: fields/id

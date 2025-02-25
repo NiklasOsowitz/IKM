@@ -1,0 +1,21 @@
+fieldsets:
+  text:
+    label: Paragraph
+    type: group
+    fieldsets:
+      - heading
+      - text
+      - list
+      - line
+  tools:
+    label: Tools
+    type: group
+    fieldsets:
+      - button
+      - form
+  media:
+    label: Media
+    type: group
+    fieldsets:
+      - image
+      - video

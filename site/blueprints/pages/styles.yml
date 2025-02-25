@@ -1,0 +1,85 @@
+title: Styles
+
+# options
+options:
+  changeSlug: false
+  changeStatus: false
+  changeTitle: false
+  delete: false
+  duplicate: false
+  move: false
+  preview: false
+  update: true
+status:
+  draft: false
+  unlisted: true
+  listed: false
+
+# fields
+columns:
+  colA:
+    width: 1/1
+    sections:
+      stylesA:
+        type: fields
+        fields:
+          styleshelpA:
+            label: 
+            type: info
+            icon: smile
+            theme: passive
+            text: |
+              Hier werden globale Stylingeinstellungen vorgenommen. Die (link: guide text: Guide-Seite target: _blank) gibt dir eine Übersicht über den Aufbau und das Styling der Seiten.
+          stylesLineA:
+            type: line
+  colB:
+    width: 1/1
+    sections:
+      stylesB:
+        type: fields
+        fields:
+          brandmarkFull:
+            label: 
+              en: Brandmark (full)
+              de: Logo (groß)
+            type: files
+            multiple: false
+            width: 1/4
+            uploads:
+              parent: site.find('media')
+              template: assets
+            query: site.find('media').images.filterBy('template', 'assets')
+          brandmarkIcon:
+            label:
+              en: Brandmark (icon)
+              de: Logo (klein)
+            type: files
+            multiple: false
+            width: 1/4
+            uploads:
+              parent: site.find('media')
+              template: assets
+            query: site.find('media').images.filterBy('template', 'assets')
+          stylesLineB:
+            type: line
+  colC: 
+    width: 1/1
+    sections:
+      stylesC:
+        type: fields
+        fields:
+          coloritems:
+            label: Farben
+            type: structure
+            fields:
+              colorname:
+                label: Name
+                icon: title
+                inline: true
+                type: text
+              colorvalue:
+                label: HEX
+                icon: pipette
+                type: color
+                format: hex
+                width: 1/1

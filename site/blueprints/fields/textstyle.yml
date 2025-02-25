@@ -1,0 +1,16 @@
+label: Text-Style
+icon: title
+empty: false
+default: "p-1"
+type: select
+width: 1/2
+options:
+  h-1: Headline 1
+  h-2: Headline 2
+  h-3: Headline 3
+  h-4: Headline 4
+  h-5: Headline 5
+  h-6: Headline 6
+  p-1: Paragraph 1
+  p-2: Paragraph 2
+  p-3: Paragraph 3

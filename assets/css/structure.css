@@ -1,0 +1,41 @@
+:root {
+    --font-a: "Figtree", sans-serif;
+    --font-b: "Schoolbell", cursive;
+    --background-blur-a: blur(20px);
+    --background-blur-b: blur(5px);
+    --background-blur-color-a: rgba(255, 255, 255, 0.6);
+    --background-blur-color-b: rgba(255, 255, 255, 0.9);
+    --shadow-a: 0 0 2px 1px var(--c-grau-b);
+    --border-a: 1px solid var(--c-grau-b);
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-a);
+}
+
+main {
+    min-height: 100dvh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: unset;
+}
+
+p {
+    margin: unset;
+}
+
+ul, ol {
+    margin: unset;
+    padding: unset;
+}
+
+button {
+    font-family: unset;
+    font-size: unset;
+    border-style: unset;
+    border-color: unset;
+    border-width: unset;
+    padding-inline: unset;
+}

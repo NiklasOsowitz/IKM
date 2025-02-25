@@ -1,0 +1,8 @@
+label: Sichtbarkeit
+icon: preview
+type: toggle
+width: 1/6
+default: true
+text:
+  - "Ausgeschaltet"
+  - "Wird angezeigt"

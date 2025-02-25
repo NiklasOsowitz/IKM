@@ -1,0 +1,12 @@
+label: Background
+type: toggles
+empty: false
+labels: true
+default: "local"
+options:
+  - value: local
+    icon: file-image
+    text: Lokal
+  - value: media
+    icon: image
+    text: Media

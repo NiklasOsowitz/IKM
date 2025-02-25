@@ -1,0 +1,26 @@
+label: Icon
+icon: circle
+placeholder: none
+type: select
+width: 1/2
+options:
+  arrowtop: Pfeil nach Oben
+  arrowtopright: Pfeil nach Rechts-Oben
+  arrowright: Pfeil nach Rechts
+  arrowleft: Pfeil nach Links
+  arrowbottom: Pfeil nach Unten
+  check: Check
+  plus: Plus
+  play: Play
+  heart: Heart
+  download: Download
+  dots: Dots
+  chat: Chat
+  email: Email
+  user: User
+  location: Location
+  url: URL
+  attachment: Anhang
+  navigator: Navigator
+  smile: Smile
+  child: Kind

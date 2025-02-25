@@ -1,0 +1,6 @@
+label: Background-Image (Lokal)
+type: files
+query: model.images
+multiple: false
+uploads:
+  template: images

@@ -1,0 +1,62 @@
+title: Standard-Seite mit Franchisee-Subseiten
+
+# options
+options:
+  changeSlug: true
+  changeStatus: true
+  changeTemplate:
+    - default
+    - defaultsubs
+    - defaultsubsfranch
+    - franchisee
+  changeTitle: true
+  create: true
+  delete: true
+  duplicate: true
+  move: true
+  preview: true
+  sort: true
+  update: true
+
+# fields
+tabs:
+  content:
+    label: 
+      en: Content
+      de: Inhalt
+    icon: layers
+    columns:
+      colA: 
+        width: 1/1
+        sections:
+          scA:
+            type: fields
+            fields:
+              contents:
+                label:
+                  en: Content 
+                  de: Inhalt
+                type: blocks
+                fieldsets:
+                  - grid
+
+  # pages
+  pages:
+    label: 
+      en: IKM-Pages
+      de: IKM-Seiten
+    icon: users
+    columns:
+      left:
+        width: 1/1
+        sections:
+          pages:
+            label: 
+              en: IKM-Pages
+              de: IKM-Seiten
+            type: pages
+            layout: cards
+            image: false
+
+  #SEO
+  seo: seo/page

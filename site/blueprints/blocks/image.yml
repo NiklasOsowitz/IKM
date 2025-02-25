@@ -1,0 +1,81 @@
+name: field.blocks.image.name
+icon: image
+preview: image
+tabs:
+  settings:
+    label: Inhalt
+    fields:
+      location:
+        label: Location
+        type: toggles
+        empty: false
+        labels: true
+        default: "local"
+        options:
+          - value: local
+            icon: file-image
+            text: Lokal
+          - value: media
+            icon: image
+            text: Media
+          - value: web
+            icon: url
+            text: Externe Quelle
+      localimg:
+        label: field.blocks.image.name
+        type: files
+        query: model.images
+        multiple: false
+        uploads:
+          template: images
+        when:
+          location: local
+      mediaimg:
+        label: field.blocks.image.name
+        type: files
+        query: site.find('media').images
+        multiple: false
+        uploads:
+          accept: template in ["images", "assets"]
+          parent: site.find('media')
+        when:
+          location: media
+      srcimg:
+        label: field.blocks.image.url
+        type: url
+        when:
+          location: web
+  styles:
+    label: Style
+    fields:
+      format:
+        width: 1/2
+        extends: fields/format
+      elmradius:
+        width: 1/2
+        extends: fields/radius
+      stylesLineA:
+        type: line
+      elmbackgroundcolor:
+        width: 1/2
+        extends: fields/backgroundcolor
+      stylesLineB:
+        type: line
+      elmspacer:
+        width: 1/2
+        extends: fields/spacer
+      elmpadding:
+        width: 1/2
+        extends: fields/padding
+  expert:
+    label: Expert
+    fields:
+      elmattributes:
+        width: 1/1
+        extends: fields/attributes
+      elmclass:
+        width: 1/1
+        extends: fields/class
+      elmid:
+        width: 1/1
+        extends: fields/id

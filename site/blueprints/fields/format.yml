@@ -1,0 +1,13 @@
+label: Format
+icon: crop
+placeholder: none
+type: select
+width: 1/6
+options:
+  frmt-11: 1/1
+  frmt-43: 4/3
+  frmt-34: 3/4
+  frmt-54: 5/4
+  frmt-45: 4/5
+  frmt-169: 16/9
+  frmt-916: 9/16

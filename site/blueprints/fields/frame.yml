@@ -1,0 +1,11 @@
+label: Frame
+icon: crop
+placeholder: none
+default: frame-standard
+type: select
+width: 1/6
+required: true
+options:
+  frame-pano: Panorama
+  frame-wide: Wide
+  frame-standard: Standard

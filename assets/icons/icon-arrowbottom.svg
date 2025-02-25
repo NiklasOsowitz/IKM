@@ -1,0 +1,6 @@
+<svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+    <g transform="translate(2 2)">
+        <line class="icon-stroke" x1="8" y1="1" x2="8" y2="18.02"/>
+        <polyline class="icon-stroke" points="1 11.02 8 18.02 15 11.02"/>
+    </g>
+</svg>

@@ -1,0 +1,42 @@
+name: field.blocks.line.name
+icon: divider
+wysiwyg: true
+preview: line
+tabs:
+  settings:
+    label: Inhalt
+    fields:
+      linetype:
+        label: Line-Type
+        type: toggles
+        empty: false
+        default: "line-1"
+        labels: true
+        options:
+          - value: line-1
+            icon: divider
+            text: Line 1
+          - value: line-2
+            icon: divider
+            text: Line 2
+  styles:
+    label: Style
+    fields:
+      elmlinecolor:
+        label: Line-Color
+        width: 1/1
+        extends: fields/bordercolor
+      stylesLineA:
+        type: line
+      elmspacer:
+        width: 1/2
+        extends: fields/spacer
+  expert:
+    label: Expert
+    fields:
+      elmattributes:
+        width: 1/1
+        extends: fields/attributes
+      elmclass:
+        width: 1/1
+        extends: fields/class

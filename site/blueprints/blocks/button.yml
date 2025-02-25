@@ -1,0 +1,104 @@
+name: Button
+icon: url
+label: "{{ btntitle }}"
+tabs:
+  settings:
+    label: Inhalt
+    fields:
+      btntitle:
+        label: Titel
+        icon: title
+        placeholder: none
+        type: text
+      settingsLineA:
+        type: line
+      btntype:
+        label: Button Type
+        type: radio
+        columns: 3
+        options:
+          hyperlink: 'hyperlink'
+          button: 'button'
+          expert: 'expert'
+        default: url
+      btnurl:
+        label: Url
+        icon: url
+        type: link
+        width: 1/1
+        when:
+          btntype: hyperlink
+      btnhref:
+        label: Href (Relative path; Anker possible)
+        icon: url
+        placeholder: none
+        type: text
+        width: 1/1
+        when:
+          btntype: expert
+      btnattributes:
+        label: Attributes
+        icon: code
+        placeholder: none
+        type: text
+        width: 1/1
+  styles:
+    label: Style
+    fields:
+      btnstyle:
+        label: Style
+        icon: dashboard
+        type: select
+        width: 1/2
+        empty: false
+        default: "btn-a"
+        options:
+          btn-a: Button (Icon Links)
+          btn-b: Button (Icon Rechts)
+          btn-c: Button (Square)
+      btngap:
+        label: Button-Gap
+        width: 1/2
+        extends: fields/gap
+      btnicon:
+        width: 1/2
+        extends: fields/icon
+      btniconsize:
+        label: Icon-Größe
+        icon: circle
+        type: select
+        width: 1/2
+        empty: false
+        default: "btn-s-a"
+        options:
+          btn-s-a: klein
+          btn-s-b: medium
+          btn-s-c: groß
+      stylesLineA:
+        type: line
+      elmshow:
+        width: 1/1
+        extends: fields/show
+      elmtheme:
+        width: 1/1
+        extends: fields/theme
+      elmradius:
+        width: 1/2
+        extends: fields/radius
+      stylesLineB:
+        type: line
+      elmspacer:
+        width: 1/2
+        extends: fields/spacer
+      elmpadding:
+        width: 1/2
+        extends: fields/padding
+  expert:
+    label: Expert
+    fields:
+      elmclass:
+        width: 1/1
+        extends: fields/class
+      elmid:
+        width: 1/1
+        extends: fields/id

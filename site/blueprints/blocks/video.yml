@@ -1,0 +1,118 @@
+name: field.blocks.video.name
+icon: video
+preview: video
+tabs:
+  settings:
+    label: Inhalt
+    fields:
+      location:
+        label: field.blocks.video.location
+        type: toggles
+        empty: false
+        default: "web"
+        options:
+          - value: kirby
+            icon: file-video
+            text: "{{ t('field.blocks.image.location.internal') }}"
+          - value: web
+            icon: youtube
+            text: "{{ t('field.blocks.image.location.external') }}"
+      url:
+        label: field.blocks.video.url.label
+        type: url
+        placeholder: field.blocks.video.url.placeholder
+        when:
+          location: web
+      video:
+        label: field.blocks.video.name
+        type: files
+        query: model.videos
+        multiple: false
+        when:
+          location: kirby
+      settingsLineA:
+        type: line
+      poster:
+        label: field.blocks.video.poster
+        type: files
+        query: model.images
+        multiple: false
+        width: 1/2
+        image:
+          back: black
+        uploads:
+          template: blocks/image
+        when:
+          location: kirby
+      preload:
+        label: field.blocks.video.preload
+        icon: wand
+        placeholder: none 
+        type: select
+        width: 1/2
+        default: auto
+        options:
+          - auto
+          - metadata
+          - none
+        when:
+          location: kirby
+      autoplay:
+        label: field.blocks.video.autoplay
+        icon: play
+        type: toggle
+        width: 1/2
+        when:
+          location: kirby
+      muted:
+        label: field.blocks.video.muted
+        icon: audio
+        type: toggle
+        width: 1/2
+        default: true
+        when:
+          location: kirby
+      loop:
+        label: field.blocks.video.loop
+        icon: refresh
+        type: toggle
+        width: 1/2
+        when:
+          location: kirby
+      controls:
+        label: field.blocks.video.controls
+        icon: cog
+        type: toggle
+        width: 1/2
+        default: true
+        when:
+          location: kirby
+  styles:
+    label: Style
+    fields:
+      format:
+        width: 1/1
+        extends: fields/format
+      elmradius:
+        width: 1/2
+        extends: fields/radius
+      stylesLineA:
+        type: line
+      elmspacer:
+        width: 1/2
+        extends: fields/spacer
+      elmpadding:
+        width: 1/2
+        extends: fields/padding
+  expert:
+    label: Expert
+    fields:
+      elmattributes:
+        width: 1/1
+        extends: fields/attributes
+      elmclass:
+        width: 1/1
+        extends: fields/class
+      elmid:
+        width: 1/1
+        extends: fields/id
